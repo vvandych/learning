@@ -1,7 +1,10 @@
-speed_of_light=299792458 #meter per second
-# print speed_of_light 
-bilionth=1.0/1000000000
-nanostik=speed_of_light*bilionth*100
-print nanostik
-cycles_per_second=2.7*bilionth #2.7 gHz processor
-print speed_of_light/cycles_per_second
+
+line = "The eruption of the volcano EY in 2010 disrupted air travel in Europe for 6 days"
+replacement = "Eyjafjallajokull"
+marker='EY'
+marker_end=len(marker)
+start=line.find(marker)
+part_a=line[:start]
+part_b=line[start+marker_end:]
+replaced=part_a+replacement+part_b
+print replaced
