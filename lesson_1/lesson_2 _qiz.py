@@ -87,3 +87,25 @@ print biggest(1,2,3)
 
 
 #quiz while looops
+def numbers(n):
+ i=1
+ while i<=n:
+           print i
+           i=i+1
+print numbers(3)
+
+
+
+#factorial
+def factorial(n):
+   result=1
+   while n>=1:
+       result=result*n
+       n=n-1
+   return result
+print factorial(2)
+
+
+
+
+#quiz_brake
