@@ -29,3 +29,11 @@ print stamps(8)
 print stamps(5)
 print stamps(29)
 print stamps(0)
+
+
+
+#last
+def set_range(a,b,c):
+   d=max (a,b,c)
+   e=min (a,b,c)
+   return d-e
