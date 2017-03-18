@@ -21,20 +21,15 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
     else:
         daysOfMonthsy2 =[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
         daysOfMonthsy1 =[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    years=year2*sum(daysOfMonthsy2)-year1*sum(daysOfMonthsy1)
     if year2-year1>=4:
         leapy=int (year2-year1)/4
     else:
         leapy =0
-    if day1==day2:
-        days=day2-day1+1
-    else:
-        days=day2-day1
+    years=year2*sum(daysOfMonthsy2)-year1*sum(daysOfMonthsy1)
+    days=day2-day1
     days_in_monthes=sum(daysOfMonthsy2[:month2-1])-sum(daysOfMonthsy1[:month1-1])
     all_days=years+days_in_monthes+days+leapy
     return all_days
-
-
 def test():
     test_cases = [((2012,1,1,2012,2,28), 58), 
                   ((2012,1,1,2012,3,1), 60),
@@ -49,3 +44,6 @@ def test():
             print "Test case passed!"
 
 test()
+
+
+
