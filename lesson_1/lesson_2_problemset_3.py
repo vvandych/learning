@@ -14,6 +14,7 @@ print fix_machine('AEIOU and sometimes y... c', 'Udacity')
 
 #days old
 def daysBetweenDates(year1, month1, day1, year2, month2, day2):
+   while True:
     if year1/4==int:
         daysOfMonthsy1 =[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if year2/4==int:
@@ -29,7 +30,8 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
     days=day2-day1
     days_in_monthes=sum(daysOfMonthsy2[:month2-1])-sum(daysOfMonthsy1[:month1-1])
     all_days=years+days_in_monthes+days+leapy
-    return all_days
+    break
+   return all_days
 def test():
     test_cases = [((2012,1,1,2012,2,28), 58), 
                   ((2012,1,1,2012,3,1), 60),
